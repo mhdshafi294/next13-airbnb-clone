@@ -1,7 +1,7 @@
 "use client";
 
 //import { useSearchParams } from 'next/navigation';
-import { useMemo } from "react";
+//import { useMemo } from "react";
 import { BiSearch } from "react-icons/bi";
 // import { differenceInDays } from 'date-fns';
 
@@ -80,7 +80,7 @@ const Search = () => {
             px-6
         "
         >
-          locationLabel
+          Anywhere
         </div>
         <div
           className="
@@ -94,7 +94,7 @@ const Search = () => {
           text-center
         "
         >
-          durationLabel
+          Any Week
         </div>
         <div
           className="
@@ -108,7 +108,7 @@ const Search = () => {
           gap-3
         "
         >
-          <div className="hidden sm:block">guestLabel</div>
+          <div className="hidden sm:block">Add Guest</div>
           <div
             className="
             p-2

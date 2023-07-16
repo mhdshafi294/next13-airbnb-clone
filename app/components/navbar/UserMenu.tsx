@@ -74,7 +74,7 @@ const UserMenu = ({ currentUser = null }) => {
         >
           <AiOutlineMenu />
           <div className="hidden md:block">
-            <Avatar src={currentUser} />
+            <Avatar />
           </div>
         </div>
       </div>

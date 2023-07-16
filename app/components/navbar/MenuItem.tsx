@@ -8,7 +8,7 @@ interface MenuItemProps {
 const MenuItem: React.FC<MenuItemProps> = ({ onClick, label }) => {
   return (
     <div
-      onClick={() => {}}
+      onClick={onClick}
       className="
         px-4
         py-3
@@ -17,7 +17,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ onClick, label }) => {
         font-semibold
       "
     >
-      label
+      {label}
     </div>
   );
 };

@@ -12,12 +12,13 @@ import { useRouter } from "next/navigation";
 
 import MenuItem from "./MenuItem";
 import Avatar from "../Avatar";
+import useRegisterModal from "@/app/hooks/userRegisterModal";
 
 const UserMenu = ({ currentUser = null }) => {
   const router = useRouter();
 
   // const loginModal = useLoginModal();
-  // const registerModal = useRegisterModal();
+  const registerModal = useRegisterModal();
   // const rentModal = useRentModal();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -119,7 +120,7 @@ const UserMenu = ({ currentUser = null }) => {
             ) : (
               <>
                 <MenuItem label="Login" onClick={() => {}} />
-                <MenuItem label="Sign up" onClick={() => {}} />
+                <MenuItem label="Sign up" onClick={registerModal.onOpen} />
               </>
             )}
           </div>

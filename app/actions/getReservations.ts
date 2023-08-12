@@ -45,5 +45,7 @@ export default async function getReservations(params: IParams) {
     }));
 
     return safeReservations;
-  } catch (error: any) {}
+  } catch (error: any) {
+    throw new Error(error);
+  }
 }

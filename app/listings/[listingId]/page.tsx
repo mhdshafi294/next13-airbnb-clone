@@ -34,3 +34,5 @@ const ListingPage = async ({ params }: { params: IParams }) => {
     </ClientOnly>
   );
 };
+
+export default ListingPage;

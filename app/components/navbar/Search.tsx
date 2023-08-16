@@ -80,7 +80,7 @@ const Search = () => {
             px-6
         "
         >
-          Anywhere
+          {locationLabel}
         </div>
         <div
           className="
@@ -94,7 +94,7 @@ const Search = () => {
           text-center
         "
         >
-          Any Week
+          {durationLabel}
         </div>
         <div
           className="
@@ -108,7 +108,7 @@ const Search = () => {
           gap-3
         "
         >
-          <div className="hidden sm:block">Add Guest</div>
+          <div className="hidden sm:block">{guestLabel}</div>
           <div
             className="
             p-2

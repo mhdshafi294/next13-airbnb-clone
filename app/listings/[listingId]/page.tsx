@@ -35,4 +35,4 @@ const ListingPage = async ({ params }: { params: IParams }) => {
   );
 };
 
-export default ListingPage;
+export default ListingPage as unknown as React.FC;

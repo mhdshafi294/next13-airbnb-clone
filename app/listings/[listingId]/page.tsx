@@ -11,7 +11,7 @@ interface IParams {
   listingId?: string;
 }
 
-const ListingPage = async (props: any) => {
+async function ListingPage(props: any) {
   const { params, searchParams } = props;
   const listing = await getListingById(params);
   const reservations = await getReservations(params);
@@ -34,6 +34,6 @@ const ListingPage = async (props: any) => {
       />
     </ClientOnly>
   );
-};
+}
 
-export default ListingPage as unknown as React.FC;
+export default ListingPage;
